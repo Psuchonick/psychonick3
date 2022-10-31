@@ -1,0 +1,338 @@
+@import 'fonts.css';
+
+
+*{ 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+.title{
+    font-size: 36px;
+    color: #eb7e28;
+    font-family: var(--a);
+    border-bottom: 2px solid #d6732b;
+    width: 83px;
+}
+
+body{
+    min-width: 320px;
+}
+
+:root{
+    --a:  'arialmt';
+    --i:   'impact';
+}
+
+.container{
+    max-width: 1140px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* header start */
+
+header .poster{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 26px 0;
+    background: linear-gradient(to right, #4a0f98, #b16616);
+}
+
+header .poster i{
+    font-size: 51px;
+    color: #fefefe;
+}
+
+header .poster p{
+    font-size: 18px;
+    color: #fefefe;
+    max-width: 160px;
+    width: 100%;
+    margin-left: 21px;
+    font-family: var(--a);
+}
+
+header nav .menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .menu ul{
+    display: flex;
+}
+
+header nav{
+    background: #000;
+}
+
+header .menu ul a{
+    font-size: 18px;
+    color: #fff;
+    font-family: var(--a);
+    padding: 43px 12px 44px 12px;
+    display: flex;
+    border-bottom: 3px solid transparent;
+    transition: 0.5s;
+}
+
+header .menu ul a:hover{
+    color: #e27c28;
+    border-bottom: 3px solid #e27c28;
+}
+
+
+/* header end */
+/* ***************************************** */
+/* main-fon start */
+
+.main-fon{
+    background: url(../img/header-fon.png) no-repeat center/cover;
+    padding-top: 185px;
+    padding-bottom: 169px;
+}
+
+.main-fon h1{
+    font-size: 60px;
+    color: #fff;
+    font-family: var(--i);
+}
+
+
+.main-fon p{
+    font-size: 18px;
+    color: #fff;
+    font-family: var(--a);
+    margin-top: 37px;
+    max-width: 578px;
+    width: 100%;
+}
+
+.main-fon .item-link a{
+    font-size: 18px;
+    color: #fff;
+    font-family: var(--a);
+    width: 164px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.main-fon .item-link a:hover{
+    background: #fff;
+    color: black;
+}
+
+.main-fon .item-link{
+    display: flex;
+    justify-content: space-between;
+    width: 360px;
+    margin-top: 80px;
+}
+
+/* main fon end */
+/* ****************************************** */
+/* films start */
+
+.films{
+    background: #02153a;
+    padding-top: 64px;
+    padding-bottom: 74px;
+
+}
+
+.films .films-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 50px;
+    
+}
+
+.films .films-item{
+    
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.films .films-item .films-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.329);
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 17px;
+    transition: 0.5s;
+}
+
+.films .films-item:hover .films-text{
+    background: transparent;
+}
+
+.films .films-item .films-text i{
+    font-size: 41px;
+}
+
+.films .films-item .films-text h3{
+    font-size: 24px;
+    font-family: var(--a);
+    margin-top: 23px;
+}
+
+.films .films-item .films-text p{
+    font-size: 16px;
+    font-family: var(--a);
+    margin-top: 17px;
+}
+
+.films .films-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.films .films-item:hover img{
+    transform: scale(1.5);
+}
+
+/* Films end */
+/* ********************************************************* */
+/* video start */
+
+
+.video{
+    padding-top: 59px;
+    padding-bottom: 59px;
+    background: linear-gradient(to left, #190d1111, #190d11, #190d11fd);
+    position: relative;
+    overflow: hidden;
+}
+.video video{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.video .video-text p{
+    font-size: 18px;
+    color: white;
+    max-width: 540px;
+    width: 100%;
+}
+.video .video-text a{
+    width: 163px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #fff;
+    color: #190d11;
+    margin-top: 50px;
+    transition: 0.5s;
+}
+
+.video .video-text a:hover{
+    background: #fefefe94
+}
+
+/* Video end */
+/* collections start */
+
+.kino-hit{
+    padding-top: 71px;
+    padding-bottom: 63px;
+    background: #02153a;
+
+}
+.kino-hit .collections .collections-item{
+   position: relative;
+   border-radius: 10px;
+   overflow: hidden;
+   margin-top: 48px;
+   
+}
+
+.kino-hit .collections .collections-block{
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px; 
+}
+
+.kino-hit .collections .collections-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.kino-hit .collections .collections-item .test-icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, #53178cc0, #aa5f1ebe)
+}
+.kino-hit .collections .collections-item .test-icon i{
+    font-size: 41px;
+    color: #fff;
+
+}
+.kino-hit .collections .collections-item .test-icon h4{
+    margin-top: 20px;
+    font-size: 24px;
+    color: white
+}
+
+.kino-hit .collections .collections-item::after{
+    content: '';
+    display: flex;
+    background: url(../img/regtangles.png) no-repeat center/cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0.95);
+    transition: 0.5s;
+}
+.kino-hit .collections .collections-item:hover::after{
+   transform: scale(1.2);
+
+}
+.kino-hit .collections .collections-item:hover .test-icon{
+    background: transparent;
+
+}
+.kino-hit .collections .collections-item:hover img{
+    transform: scale(1.2)
+}

@@ -1,0 +1,95 @@
+@media (max-width: 747px) {
+    .kino-hit .collections .collections-block{
+        grid-template-columns: 1fr;
+        
+    }
+}
+@media (max-width: 600px) {
+    header nav .menu{
+        flex-direction: column;
+    }
+    
+    header .menu .logo{
+        margin-top: 10px;
+    }
+    
+    header .menu ul a {
+        padding: 20px 12px 20px 12px;
+    }
+    
+    header .poster{
+        padding: 5px 0;
+    }
+    
+    header .poster i {
+        font-size: 25px;
+    }
+    
+    header .poster p{
+        font-size: 11px;
+    }
+}
+@media (max-width: 580px) {
+    .video .video-text{
+        text-align: center;
+    }
+    .video .video-text a{
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .video .video-text img{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 400px) {
+    header .menu ul a{
+        font-size: 15px;
+    }
+    
+    header .menu .logo img{
+        width: 100px;
+    }
+    
+    .main-fon{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    
+    .main-fon .item-link{
+        width: 100%;
+       flex-direction: column;
+       margin-top: 15px;
+    }
+    
+    .main-fon .item-link a{
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 370px) {
+    .main-fon h1{
+        font-size: 25px;
+    }
+    .main-fon p{
+        font-size: 12px;
+        margin-top: 20px;
+    }
+
+}
+@media (max-width: 870px) {
+    .films .films-grid{
+
+        grid-template-columns: 1fr 1fr;
+        
+        
+    }
+}
+@media (max-width: 460px){
+    .films .films-grid{
+        grid-template-columns: 1fr;
+    }
+}
